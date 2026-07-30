@@ -35,9 +35,8 @@ MODEL_BASE_URL = os.environ.get("MODEL_BASE_URL", "https://aipipe.org/openai/v1"
 LOG_PATH = os.environ.get("LOG_PATH", "/tmp/run.jsonl")
 TG_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
 # CHANGE THIS
-BASE_URL = os.environ.get("BASE_URL", "http://localhost:8000").rstrip("/")
+BASE_URL = "https://tds-bot-production.up.railway.app"
 LOG_URL = f"{BASE_URL}/run.jsonl"
-
 MAX_AGENT_STEPS = 10
 PY_TIMEOUT = 60  # seconds for one run_python call
 ANSWER_BUDGET = 210  # wall-clock seconds before we force a final answer
