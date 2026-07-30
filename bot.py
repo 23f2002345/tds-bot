@@ -32,10 +32,11 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 AIPIPE_TOKEN = os.environ.get("AIPIPE_TOKEN", "")
 MODEL = os.environ.get("MODEL", "gpt-4o-mini")
 MODEL_BASE_URL = os.environ.get("MODEL_BASE_URL", "https://aipipe.org/openai/v1")
-BASE_URL = os.environ.get("BASE_URL", "http://localhost:8000").rstrip("/")
 LOG_PATH = os.environ.get("LOG_PATH", "/tmp/run.jsonl")
-LOG_URL = f"{BASE_URL}/run.jsonl"
 TG_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
+# CHANGE THIS
+BASE_URL = os.environ.get("BASE_URL", "http://localhost:8000").rstrip("/")
+LOG_URL = f"{BASE_URL}/run.jsonl"
 
 MAX_AGENT_STEPS = 10
 PY_TIMEOUT = 60  # seconds for one run_python call
