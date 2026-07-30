@@ -32,7 +32,3 @@ The required execution log for grading can be found at:
    ```bash
    git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
 
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
